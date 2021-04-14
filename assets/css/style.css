@@ -1,31 +1,61 @@
+/*imports*/
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css");
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+/* common styles */
+
+
 /* header area styles */
+.header_info {
+  background-color: #0C223C;
+  color: #fff;
+}
+.header_info .navbar {
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
 .header_info_search form {
-    position: relative;
-    width: 300px;
-    margin: 0 auto;
-  }
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+}
 .header_info_search input {
-    width: 100%;
-    height: 42px;
-    padding-left: 10px;
-    border-radius: 5px;
-    outline: none;
-    color: #9E9C9C;
-  }
-  .header_info_search button {
-    position: absolute; 
-    top: 0;
-    right: 0px;
-    width: 42px;
-    height: 42px;
-    border: none;
-    background: #7BA7AB;
-    border-radius: 0 5px 5px 0;
-    cursor: pointer;
-  }
-  .header_info_search button:before {
-    content: "\f002";
-    font-family: FontAwesome;
-    font-size: 16px;
-    color: #F9F0DA;
-  }
+  max-width: 356px;
+  width: 100%;
+  height: 26px;
+  padding-left: 30px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  color: #9E9C9C;
+}
+.header_info_search button {
+  position: absolute; 
+  top: 0;
+  width: 26px;
+  height: 30px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+.header_info_search button:before {
+  content: "\f002";
+  font-family: FontAwesome;
+  font-size: 16px;
+  color: #0C223C;
+}
+.header_info_contacts {
+  color: #fff;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+}
+.header_info_links {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 15px;
+  color: #4DDFFF;
+}
