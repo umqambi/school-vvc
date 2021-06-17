@@ -2,9 +2,24 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css");
 @import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
 /* common styles */
+.sh2 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 59px;
+}
+.t-col-w {
+  color: #FFFFFF;
+}
+.t-col-b {
+  color: linear-gradient(90deg, #436DFF 0%, #3141D7 100%);
+  ;
 
+}
 
 /* header area styles */
+#header {font-family: Roboto;}
 .header_info {
   background-color: #0C223C;
   color: #fff;
@@ -59,6 +74,16 @@
   line-height: 15px;
   color: #4DDFFF;
 }
+.btn-wr {
+  background: linear-gradient(90deg, #436DFF 0%, #3141D7 100%);
+  color: #fff;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  padding: .75rem 2rem;
+}
 
 .h_logo_text {
   padding-left: 10px;
@@ -79,6 +104,8 @@
 .h_b_one {
   height: 300px;
   background-image: url(../img/header-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .h_b_line {
   background: linear-gradient(90deg, #436DFF 0%, #3141D7 100%);
@@ -98,7 +125,200 @@
   color: #436DFF;
   font-size: 30px;
 }
+.hbl_item {
+  color: #0C223C;
+  text-decoration: none;
+}
+.hbl_item a {
+  text-decoration: none;
+}
+.hbl_item:hover {
+  background-color: #4DDFFF;
+}
+.hbli_wrap {
+  width: 100%;
+  height: 100%;
+}
 .hbl_item p {
-  font-size: 14px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  color: #0C223C;
+  text-decoration: none;
+}
+
+/* content styles */
+.section-white {
+  padding: 40px 10px;
+}
+.section-waves {
+  background-image: url(../img/waves.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 610px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+/*slider main 1 */
+
+
+.btn-sl {
+  width: 200px;
+  height: 48px;
+  background: #4DDFFF;
+  border-radius: 5px;
+  margin-top: 50px;
+}
+#slider1 .carousel-control-prev-icon {
+  background-image: url(../img/sl1-prev.png);
+}
+#slider1 .carousel-control-next-icon {
+  background-image: url(../img/sl1-next.png);
+}
+#slider1 .carousel-control-next, .carousel-control-prev {
+  width: auto;
+}
+#slider1 .carousel-inner {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+#slider1 .carousel-control-prev {
+  left: -30px;
+}
+#slider1 .carousel-control-next {
+  right: -30px;
+}
+#slider1 .sl-l{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#slider1 .sl_head {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 59px;
+  color: #3141D7;
+}
+#slider1 .sl_text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+  color: #0C223C;
+  margin-top: 25px;
+}
+#slider1 .sl-r img {
+  max-width: 840px;
+  max-height: 600px;
+}
+
+/*section sports*/
+.sports-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.sports-item {
+  border-radius: 5px;
+}
+.sports-items-header {
+  height: 35px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px 5px 0 0;
+}
+.sports-item h3 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
   color: #0C223C;
 }
+.sports-item img {
+  border-radius: 0 0 5px 5px;
+}
+.sports-item:hover {
+  margin-top: -10px;
+}
+.sports-item:hover h3 {
+  color: #4DDFFF;
+}
+
+
+
+
+
+/* footer */
+#footer {
+  background-color: #0C223C;
+  color: #fff;
+}
+.frow1 {
+  margin-top: 50px;
+}
+.fnav {
+  padding-left: 0;
+}
+.fnav li {
+  list-style: none;
+}
+.fnav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.fcol2>div {
+  margin-bottom: 15px;
+}
+#footer .h_logo img {
+  height: 50px;
+  width: 50px;
+}
+#footer .h_logo_text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 12px;
+  line-height: 14px;
+  color: #FFFFFF;
+  width: 180px;
+}
+
+.fcol3 {
+  display: flex;
+  flex-direction: column;
+}
+#footer .btn-wr {
+  width: 200px;
+}
+.fcol3 a {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  text-decoration-line: underline;
+  color: #3CC9DE;
+}
+
+.fbottom {
+  margin-top: 40px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+  color: #4A6B92;
+}
+.fbottom p {margin-bottom: 0;}
