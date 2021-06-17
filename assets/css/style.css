@@ -138,7 +138,10 @@ thead {
   line-height: 18px;
   padding: .75rem 2rem;
 }
-
+#header .h_logo a {
+	text-decoration: none;
+	color: #35567D;
+}
 .h_logo_text {
   padding-left: 10px;
   max-width: 310px;
