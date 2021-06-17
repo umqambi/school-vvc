@@ -7,9 +7,79 @@
         <!-- CSS -->
         <link href="assets/css/bootstrap.min.css" rel="stylesheet">
         <link href="assets/css/fontawesome-5013-all.css" rel="stylesheet">
+        <link rel="stylesheet" href="./assets/owlcarousel/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="./assets/owlcarousel/assets/owl.theme.default.min.css">
         <link href="assets/css/style.css" rel="stylesheet">
         <!-- Title -->
         <title>Спортивная школа олимпийского  резерва по водным видам спорта</title>
+        <script src="./assets/js/jquery.min.js"></script>
+        <script>
+            jQuery(document).ready(function(){
+                jQuery("#proud-carousel").owlCarousel({
+                    responsive:{
+                        0:{
+                            items:1,
+                            nav:true
+                        },
+                        577:{
+                            items:3,
+                            nav:false,
+                            navText: "",
+                            margin: 5
+                        },
+                        993:{
+                            items:6,
+                            nav:true,
+                            navText: "",
+                            loop:false,
+                            margin: 10
+                        }
+                    }
+                });
+                jQuery("#treners-carousel").owlCarousel({
+                    responsive:{
+                        0:{
+                            items:1,
+                            nav:true,
+                        },
+                        577:{
+                            items:2,
+                            nav:false,
+                            navText: "",
+                            margin: 5
+                        },
+                        993:{
+                            items:4,
+                            nav:true,
+                            navText: "",
+                            loop:false,
+                            margin: 15
+                        }
+                    }
+                });
+                jQuery(".sports-wrap").owlCarousel({
+                    responsive:{
+                        0:{
+                            items:1,
+                            loop:true,
+                            nav:true
+                        },
+                        577:{
+                            items:2,
+                            nav:true,
+                            margin: 5
+                        },
+                        993:{
+                            items:6,
+                            nav:false,
+                            navText: "",
+                            loop:false,
+                            margin: 5
+                        }
+                    }
+                });
+            });
+        </script>
     </head>
     <body class="d-flex flex-column h-100">
         
@@ -56,26 +126,18 @@
                                         <a class="nav-link" href="#">Новости</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Галерея</a>
-                                    </li>
-                                    <li class="nav-item">
                                         <a class="nav-link" href="#">Документы</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Структура</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="#">Контакты</a>
                                     </li>
                                     <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                            Dropdown
+                                            Структура
                                         </a>
                                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                            <li><a class="dropdown-item" href="#">Action</a></li>
-                                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                                            <li><hr class="dropdown-divider"></li>
-                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                            <li><a class="dropdown-item" href="#">Виды спорта</a></li>
+                                            <li><a class="dropdown-item" href="#">Тренерский состав</a></li>
                                         </ul>
                                     </li>
                                 </ul>
@@ -145,97 +207,7 @@
 
         <!-- SITE CONTENT -->
         <div id="main" class="flex-shrink-0">
-<<<<<<< Updated upstream
 
-    <section id="sports" class="section-waves">
-        <div class="container">
-            <h2 class="sh2 t-col-w">Виды спорта</h2>
-            <div class="sports-wrap owl-carousel crusel-v1">
-                <div class="sports-item">
-                    <a href="/swimming/">
-                        <div class="sports-items-header"><h3>Плавание</h3></div>
-                        <img src="<?php bloginfo('template_directory') ?>/assets/img/swimming.jpg" alt="">
-                    </a>    
-                </div>
-                <div class="sports-item">
-                    <a href="/waterpolo/">
-                        <div class="sports-items-header"><h3>Водное поло</h3></div>
-                        <img src="<?php bloginfo('template_directory') ?>/assets/img/waterpolo.jpg" alt="">
-                    </a>    
-                </div>
-                <div class="sports-item">
-                    <a href="/waterjump/">
-                        <div class="sports-items-header"><h3>Прыжки в воду</h3></div>
-                        <img src="<?php bloginfo('template_directory') ?>/assets/img/waterjump.jpg" alt="">
-                    </a>
-                </div>
-                <div class="sports-item">
-                    <a href="/synzronic-swimming/">
-                        <div class="sports-items-header"><h3>Синхронное плавание</h3></div>
-                        <img src="<?php bloginfo('template_directory') ?>/assets/img/synch.jpg" alt="">
-                    </a>
-                </div>
-                <div class="sports-item">
-                    <a href="/waterskis/">
-                        <div class="sports-items-header"><h3>Воднолыжный спорт</h3></div>
-                        <img src="<?php bloginfo('template_directory') ?>/assets/img/waterskis.jpg" alt="">
-                    </a>    
-                </div>
-                <div class="sports-item">
-                    <a href="/dive/">
-                        <div class="sports-items-header"><h3>Подводное плавание</h3></div>
-                        <img src="<?php bloginfo('template_directory') ?>/assets/img/dive.jpg" alt="">
-                    </a>    
-                </div>
-            </div>
-        </div>
-    </section>
-      
-     <section id="docs" class="container section-white">
-        <div class="section-head">
-            <h2 class="sh2 t-col-b">Документы</h2>
-        </div>
-        <div class="row gy-2">
-            <div class="col-lg-3 col-md-4 .d-md-flex">
-                <a class="btn btn-docs" href="#"><div class="docs-btn-wrap">Госзадание</div></a>
-            </div>
-            <div class="col-lg-3 col-md-4">
-                <a class="btn btn-docs" href="#">Нормативно-правовые документы</a>
-            </div>
-            <div class="col-lg-3 col-md-4">
-                <a class="btn btn-docs" href="#">Финансово-хозяйственная деятельность</a>
-            </div>
-            <div class="col-lg-3 col-md-4">
-                <a class="btn btn-docs" href="#">Паспорт учреждения</a>
-            </div>
-            <div class="col-lg-3 col-md-4">
-                <a class="btn btn-docs" href="#">Антидопинговое обеспечение</a>
-            </div>
-            <div class="col-lg-3 col-md-4">
-                <a class="btn btn-docs" href="#">Протоколы соревнований</a>
-            </div>
-            <div class="col-lg-3 col-md-4">
-                <a class="btn btn-docs" href="#">Полезные ссылки</a>
-            </div>
-            <div class="col-lg-3 col-md-4">
-                <a class="btn btn-docs" href="#">Антикоррупция</a>
-            </div>
-            <div class="col-lg-3 col-md-4">
-                <a class="btn btn-docs" href="#">Спортивная работа</a>
-            </div>
-            <div class="col-lg-3 col-md-4">
-                <a class="btn btn-docs" href="#">Сборная команда</a>
-            </div>
-            <div class="col-lg-3 col-md-4">
-                <a class="btn btn-docs" href="#">Платные услуги</a>
-            </div>
-            <div class="col-lg-3 col-md-4">
-                <a class="btn btn-docs" href="#">Календарный план</a>
-            </div>
-        </div>
-    </section>                  
-            
-=======
             <section id="slider1" class="container section-white">
                 <div id="carouselSctn1" class="carousel carousel-dark slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
@@ -305,139 +277,146 @@
                         <span class="visually-hidden">Следующий</span>
                     </button>
                 </div>
-            </section>
+            </section>               
+
             <section id="sports" class="section-waves">
                 <div class="container">
                     <h2 class="sh2 t-col-w">Виды спорта</h2>
-                    <div class="sports-wrap">
+                    <div class="sports-wrap owl-carousel crusel-v1">
                         <div class="sports-item">
-                            <div class="sports-items-header"><h3>Плавание</h3></div>
-                            <img src="assets/img/swimming.jpg" alt="">
+                            <a href="#">
+                                <div class="sports-items-header"><h3>Плавание</h3></div>
+                                <img src="./assets/img/swimming.jpg" alt="">
+                            </a>    
                         </div>
                         <div class="sports-item">
-                            <div class="sports-items-header"><h3>Водное поло</h3></div>
-                            <img src="assets/img/waterpolo.jpg" alt="">
+                            <a href="#">
+                                <div class="sports-items-header"><h3>Водное поло</h3></div>
+                                <img src="./assets/img/waterpolo.jpg" alt="">
+                            </a>    
                         </div>
                         <div class="sports-item">
-                            <div class="sports-items-header"><h3>Прыжки в воду</h3></div>
-                            <img src="assets/img/waterjump.jpg" alt="">
+                            <a href="#">
+                                <div class="sports-items-header"><h3>Прыжки в воду</h3></div>
+                                <img src="./assets/img/waterjump.jpg" alt="">
+                            </a>
                         </div>
                         <div class="sports-item">
-                            <div class="sports-items-header"><h3>Синхронное плавание</h3></div>
-                            <img src="assets/img/synch.jpg" alt="">
+                            <a href="#">
+                                <div class="sports-items-header"><h3>Синхронное плавание</h3></div>
+                                <img src="./assets/img/synch.jpg" alt="">
+                            </a>
                         </div>
                         <div class="sports-item">
-                            <div class="sports-items-header"><h3>Воднолыжный спорт</h3></div>
-                            <img src="assets/img/waterskis.jpg" alt="">
+                            <a href="#">
+                                <div class="sports-items-header"><h3>Воднолыжный спорт</h3></div>
+                                <img src="./assets/img/waterskis.jpg" alt="">
+                            </a>    
                         </div>
                         <div class="sports-item">
-                            <div class="sports-items-header"><h3>Подводное плавание</h3></div>
-                            <img src="assets/img/dive.jpg" alt="">
+                            <a href="#">
+                                <div class="sports-items-header"><h3>Подводное плавание</h3></div>
+                                <img src="./assets/img/dive.jpg" alt="">
+                            </a>    
                         </div>
                     </div>
                 </div>
             </section>
+            
             <section id="docs" class="container section-white">
-                <h2 class="sh2 t-col-b">Документы</h2>
-                <div class="row">
-                    <div class="col-lg-3 col-md-4">
-                        <a class="btn " href="#">Госзадание</a>
+                <div class="section-head">
+                    <h2 class="sh2 t-col-b">Документы</h2>
+                </div>
+                <div class="row gy-2">
+                    <div class="col-lg-3 col-md-4 .d-md-flex">
+                        <a class="btn btn-docs" href="#"><div class="docs-btn-wrap">Госзадание</div></a>
                     </div>
                     <div class="col-lg-3 col-md-4">
-                        <a class="btn " href="#">Нормативно-правовые документы</a>
+                        <a class="btn btn-docs" href="#">Нормативно-правовые документы</a>
                     </div>
                     <div class="col-lg-3 col-md-4">
-                        <a class="btn " href="#">Финансово-хозяйственная деятельность</a>
+                        <a class="btn btn-docs" href="#">Финансово-хозяйственная деятельность</a>
                     </div>
                     <div class="col-lg-3 col-md-4">
-                        <a class="btn " href="#">Паспорт учреждения</a>
+                        <a class="btn btn-docs" href="#">Паспорт учреждения</a>
                     </div>
                     <div class="col-lg-3 col-md-4">
-                        <a class="btn " href="#">Антидопинговое обеспечение</a>
+                        <a class="btn btn-docs" href="#">Антидопинговое обеспечение</a>
                     </div>
                     <div class="col-lg-3 col-md-4">
-                        <a class="btn " href="#">Протоколы соревнований</a>
+                        <a class="btn btn-docs" href="#">Протоколы соревнований</a>
                     </div>
                     <div class="col-lg-3 col-md-4">
-                        <a class="btn " href="#">Полезные ссылки</a>
+                        <a class="btn btn-docs" href="#">Полезные ссылки</a>
                     </div>
                     <div class="col-lg-3 col-md-4">
-                        <a class="btn " href="#">Антикоррупция</a>
+                        <a class="btn btn-docs" href="#">Антикоррупция</a>
                     </div>
                     <div class="col-lg-3 col-md-4">
-                        <a class="btn " href="#">Спортивная работа</a>
+                        <a class="btn btn-docs" href="#">Спортивная работа</a>
                     </div>
                     <div class="col-lg-3 col-md-4">
-                        <a class="btn " href="#">Сборная команда</a>
+                        <a class="btn btn-docs" href="#">Сборная команда</a>
                     </div>
                     <div class="col-lg-3 col-md-4">
-                        <a class="btn " href="#">Платные услуги</a>
+                        <a class="btn btn-docs" href="#">Платные услуги</a>
                     </div>
                     <div class="col-lg-3 col-md-4">
-                        <a class="btn " href="#">Календарный план</a>
+                        <a class="btn btn-docs" href="#">Календарный план</a>
                     </div>
                 </div>
-            </section>
-            <section id="treners" class="container section-white">
-                <h2 class="sh2 t-col-b">Тренерский состав</h2>
-                <div class="crusel-v1">
-                    <div class="cv1-item">
-                        <a href="#">
-                            <div class="card">
-                                <img src="assets/img/trenet-foto.jpg" class="card-img-top" alt="">
-                                <div class="card-body">
-                                    <h5 class="card-title">Глыба М.А</h5>
-                                    <p class="card-text">тренер по плаванию</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    
-                </div>
-            </section>
-            <section id="proud" class="container section-white">
-                <h2 class="sh2 t-col-b">Гордость школы</h2>
-            </section>
+            </section>   
 
-            <section id="innums" class="section-waves">
+            <section id="innums" class="section-waves t-col-w">
                 <div class="container">
-                    <h2 class="sh2 t-col-w">Наша школа “в цифрах”</h2>
-                    <p>СШОР по водным видам спорта была образована в 1968 году. На сегодняшний момент в учреждении:</p>
-                    <div class="innums-inner">
-                        <div class="innums-item">
+                    <div class="innums-head">
+                        <h2 class="sh2">Наша школа “в цифрах”</h2>
+                        <p>СШОР по водным видам спорта была образована в 1968 году.</br>
+                            На сегодняшний момент в учреждении:</p>
+                    </div>
+                    <div class="innums-inner row">
+                        <div class="innums-item col-md-3 col-6">
                             <div class="innum-num">575</div>
                             <div class="innum-txt">воспитанников</div>
                         </div>
-                        <div class="innums-item">
+                        <div class="innums-item col-md-3 col-6">
                             <div class="innum-num">28</div>
                             <div class="innum-txt">тренеров</div>
                         </div>
-                        <div class="innums-item">
+                        <div class="innums-item col-md-3 col-6">
                             <div class="innum-num">5</div>
                             <div class="innum-txt">заслуженных тренеров России</div>
                         </div>
-                        <div class="innums-item">
+                        <div class="innums-item col-md-3 col-6">
                             <div class="innum-num">6</div>
                             <div class="innum-txt">видов спорта</div>
                         </div>
-
+        
+                    </div>
+                </div>
+            </section>
+            <section id="about" class="container-fluid">
+                <div class="container">
+                    
+                    <div class="row">
+                        <div class="col-lg-5 about-text">
+                            <div class="section-head">
+                                <h2 class="sh2 t-col-b">О нашей школе</h2>
+                            </div>
+                            <h4>О школе и достижениях</h4>
+                            <p>История спортивной школы олимпийского резерва по водным видам спорта берет свое начало в 1968 году с образования «Областной СДЮШОР».</p>
+                            <p>Уже 53 года школа осуществляет подготовку спортивного резерва, спортсменов высокого класса, способных войти в состав спортивных сборных команд Саратовской области и Российской Федерации.</p>
+                            <p>История спортивной школы олимпийского резерва по водным видам спорта берет свое начало в 1968 году с образования «Областной СДЮШОР».</p>
+                            <p>Уже 53 года школа осуществляет подготовку спортивного резерва, спортсменов высокого класса, способных войти в состав спортивных сборных команд Саратовской области и Российской Федерации.</p>
+                            <a href="#" class="btn">Читать подробнее</a>
+                        </div>
+                        <div class="col-lg-7 about-img">
+        
+                        </div>
                     </div>
                 </div>
             </section>
 
-            <section id="news" class="container section-white">
-                <h2 class="sh2 t-col-b">Новости</h2>
-            </section>
-            <section id="about" class="container section-white">
-                <h2 class="sh2 t-col-b">О нашей школе</h2>
-            </section>
-            <section id="pulls" class="container section-white">
-                <h2 class="sh2 t-col-b">Бассейны</h2>
-            </section>
-            <section id="useful-links" class="container section-white">
-                <h2 class="sh2 t-col-b">Полезные ссылки</h2>
-            </section>
->>>>>>> Stashed changes
         </div>
         <!-- SITE FOOTER -->
         <div id="footer" class="footer mt-auto py-3">
@@ -445,14 +424,6 @@
                 <div class="row frow1">
                     <div class="col-sm-4">
                         <ul class="fnav">
-<<<<<<< Updated upstream
-                            <li><a href="/o-shkole/">О школе</a></li>
-                            <li><a href="/dokumenty/">Документы</a></li>
-                            <li><a href="/dokumenty/kalendarnyj-plan/">Календарный план</a></li>
-                            <li><a href="/struktura/">Структура</a></li>
-                            <li><a href="/content/news/">Новости</a></li>
-                            <li><a href="/galery/">Галерея</a></li>
-=======
                             <li><a href="#">О школе</a></li>
                             <li><a href="#">Документы</a></li>
                             <li><a href="#">Виды спорта</a></li>
@@ -460,23 +431,17 @@
                             <li><a href="#">Структура</a></li>
                             <li><a href="#">Новости</a></li>
                             <li><a href="#">Галерея</a></li>
->>>>>>> Stashed changes
                         </ul>
                     </div>
                     <div class="col-sm-4 fcol2">
                         <div class="navbar-brand h_logo">
                             <a class="d-flex" href="/">
-<<<<<<< Updated upstream
-                                <img src="<?php bloginfo('template_directory') ?>/assets/img/logo.png" alt="Спортивная школа олимпийского резерва по водным видам спорта" width="70" height="70">
-=======
                                 <img src="assets/img/logo.png" alt="Спортивная школа олимпийского резерва по водным видам спорта" width="70" height="70">
->>>>>>> Stashed changes
                                 <div class="h_logo_text">
                                     ГБУ СО "Спортивная школа олимпийского резерва по водным видам спорта"
                                 </div>
                             </a>
                         </div>
-<<<<<<< Updated upstream
                         <div class="hic_tel">
                             <a href="tel:+78452374419">
                                 <i class="bi bi-telephone"></i> +7 (8888) 88-88-88
@@ -485,29 +450,14 @@
                         <div><i class="bi bi-envelope"></i> 888888@mail.ru</div>
                         <div><i class="bi bi-geo-alt"></i> г. Саратов, ул. Тархова, д. xx</div>
                         <div class="social-icons">
-                            <a href="//www.instagram.com/vodnyky/"><img src="./assets/img/instagramm.png" alt="Instagramm"></a>
-                            <a href="//vk.com/vodnyky"><img src="./assets/img/vk.png" alt="VK"></a>
+                            <a href="#"><img src="./assets/img/instagramm.png" alt="Instagramm"></a>
+                            <a href="#"><img src="./assets/img/vk.png" alt="VK"></a>
                         </div>
                     </div>
                     <div class="col-sm-4 fcol3">
                         <button class="btn btn-wr sg-popup-id-228" type="submit">Написать нам</button>
                         <a style="padding-top: 20px; padding-bottom: 20px;" href="https://umqambi.github.io/umqambi/" target="_blank
-"><img src="./assets/img/stroim-sait.png" alt=""></a>
-=======
-                        <div>
-                            <i class="bi bi-telephone"></i> +7 (8452) 37-44-19
-                        </div>
-                        <div><i class="bi bi-envelope"></i> osduwor@mail.ru</div>
-                        <div><i class="bi bi-geo-alt"></i> г. Саратов, ул. Тархова, д. 66</div>
-                        <div class="social-icons">
-                            <a href="#"><img src="assets/img/instagramm.png" alt="Instagramm"></a>
-                            <a href="#"><img src="assets/img/vk.png" alt="VK"></a>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 fcol3">
-                        <button class="btn btn-wr" type="submit">Написать нам</button>
-                        <a style="padding-top: 20px; padding-bottom: 20px;" href="#"><img src="assets/img/stroim-sait.png" alt=""></a>
->>>>>>> Stashed changes
+"><img src="./assets/img/logo-umqambi.png" width="200" alt=""></a>
                         <a href="#">Правила использования материалов сайта</a>
                     </div>
                 </div>
@@ -520,5 +470,6 @@
 
         <!-- JS -->
         <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="./assets/owlcarousel/owl.carousel.min.js"></script>
     </body>
 </html>
